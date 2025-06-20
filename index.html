@@ -7,11 +7,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" />
   <style>
     :root {
-      --background: #8FBC8F;   /* Dark Sea Green */
-      --dark-color: #2F4F2F;   /* Dark Slate Green */
-      --box-bg: #fff8f0;       /* Krem beyaz kutu */
-      --link-color: #317873;   /* Canlı yeşil-mavi vurgu */
-      --accent-color: #4f7356; /* Vurgu */
+      --background: #D5F3F1;
+      --header-color: #FF6F61;
+      --box-bg: #FFFFFF;
+      --link-color: #3CB9FC;
+      --accent: #EAF1EF;
+      --text-color: #2C2C2C;
     }
 
     body {
@@ -19,20 +20,19 @@
       margin: 0;
       padding: 0;
       background-color: var(--background);
-      color: #2F4F2F;
+      color: var(--text-color);
       font-size: 17px;
       line-height: 1.7;
     }
 
     header {
-      background-color: var(--dark-color);
+      background-color: var(--header-color);
       color: white;
       padding: 20px;
       text-align: center;
       position: sticky;
       top: 0;
       z-index: 10;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.12);
       font-weight: 700;
       letter-spacing: 1.2px;
       font-size: 1.6rem;
@@ -43,9 +43,8 @@
       margin: 40px auto;
       background: var(--box-bg);
       padding: 30px;
-      box-shadow: 0 0 12px rgba(0,0,0,0.08);
       border-radius: 12px;
-      color: var(--dark-color);
+      box-shadow: 0 0 12px rgba(0,0,0,0.05);
     }
 
     h1 {
@@ -53,8 +52,8 @@
     }
 
     h2 {
-      color: var(--dark-color);
-      border-bottom: 3px solid var(--accent-color);
+      color: var(--header-color);
+      border-bottom: 3px solid var(--accent);
       padding-bottom: 8px;
       margin-top: 40px;
       font-weight: 700;
@@ -76,7 +75,6 @@
 
     a:hover {
       text-decoration: underline;
-      color: var(--dark-color);
     }
 
     .section {
@@ -96,8 +94,8 @@
       height: 120px;
       border-radius: 50%;
       object-fit: cover;
-      border: 4px solid var(--dark-color);
-      box-shadow: 0 0 10px rgba(47, 79, 47, 0.3);
+      border: 4px solid var(--header-color);
+      box-shadow: 0 0 10px rgba(255, 111, 97, 0.4);
     }
 
     .profile-info {
@@ -115,7 +113,7 @@
     }
 
     strong {
-      color: var(--accent-color);
+      color: var(--header-color);
     }
 
     @media (max-width: 600px) {
