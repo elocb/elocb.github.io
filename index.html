@@ -7,40 +7,41 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
   <style>
     :root {
-      --mint-bg: #e0f8f1;
-      --mint-box: #f4fffb;
-      --green-dark: #314031; /* Yeni koyu yeşil */
-      --green-link: #0b4f3d;
+      --background: #601960; /* Arka plan */
+      --dark-color: #600060; /* Koyu kısım */
+      --box-bg: #f4fffb;     /* Kutular */
+      --link-color: #0b4f3d;
     }
 
     body {
       font-family: 'Inter', sans-serif;
       margin: 0;
       padding: 0;
-      background-color: var(--mint-bg);
-      color: #1e1e1e;
+      background-color: var(--background);
+      color: #f0f0f0;
       font-size: 17px;
       line-height: 1.7;
     }
 
     header {
-      background-color: var(--green-dark);
+      background-color: var(--dark-color);
       color: white;
       padding: 20px;
       text-align: center;
       position: sticky;
       top: 0;
       z-index: 10;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      box-shadow: 0 2px 4px rgba(0,0,0,0.3);
     }
 
     .container {
       max-width: 900px;
       margin: 40px auto;
-      background: var(--mint-box);
+      background: var(--box-bg);
       padding: 30px;
-      box-shadow: 0 0 12px rgba(0,0,0,0.08);
+      box-shadow: 0 0 12px rgba(0,0,0,0.3);
       border-radius: 12px;
+      color: #1e1e1e;
     }
 
     h1 {
@@ -48,7 +49,7 @@
     }
 
     h2 {
-      color: var(--green-dark);
+      color: var(--dark-color);
       border-bottom: 2px solid #cceee5;
       padding-bottom: 5px;
       margin-top: 40px;
@@ -60,7 +61,7 @@
     }
 
     a {
-      color: var(--green-link);
+      color: var(--link-color);
       text-decoration: none;
       transition: 0.2s ease;
     }
@@ -87,7 +88,7 @@
       height: 120px;
       border-radius: 50%;
       object-fit: cover;
-      border: 3px solid var(--green-dark);
+      border: 3px solid var(--dark-color);
     }
 
     .profile-info {
