@@ -6,43 +6,68 @@
   <title>Elif Cebeci – Academic CV</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
   <style>
+    :root {
+      --mint-bg: #e0f8f1;
+      --mint-box: #f4fffb;
+      --green-dark: #145c44;
+      --green-link: #0b4f3d;
+    }
+
     body {
       font-family: 'Inter', sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #e0f8f1; /* Mint yeşili */
+      background-color: var(--mint-bg);
+      color: #1e1e1e;
+      font-size: 17px;
+      line-height: 1.7;
     }
 
     header {
-      background-color: #145c44; /* Koyu yeşil */
+      background-color: var(--green-dark);
       color: white;
       padding: 20px;
       text-align: center;
       position: sticky;
       top: 0;
+      z-index: 10;
       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
 
     .container {
       max-width: 900px;
       margin: 40px auto;
-      background: white;
+      background: var(--mint-box);
       padding: 30px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
-      border-radius: 10px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.08);
+      border-radius: 12px;
     }
 
-    h1, h2 {
-      color: #145c44;
+    h1 {
+      margin: 0;
+    }
+
+    h2 {
+      color: var(--green-dark);
+      border-bottom: 2px solid #cceee5;
+      padding-bottom: 5px;
+      margin-top: 40px;
     }
 
     ul {
       padding-left: 20px;
+      margin-top: 10px;
     }
 
     a {
-      color: #0b4f3d;
+      color: var(--green-link);
       text-decoration: none;
+      transition: 0.2s ease;
+    }
+
+    a:hover {
+      text-decoration: underline;
+      color: #0d3f2e;
     }
 
     .section {
@@ -62,7 +87,7 @@
       height: 120px;
       border-radius: 50%;
       object-fit: cover;
-      border: 3px solid #145c44;
+      border: 3px solid var(--green-dark);
     }
 
     .profile-info {
@@ -75,6 +100,16 @@
 
     .section ul li {
       margin-bottom: 6px;
+    }
+
+    @media (max-width: 600px) {
+      .profile {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .profile img {
+        margin-bottom: 15px;
+      }
     }
   </style>
 </head>
@@ -178,8 +213,7 @@
         <li>GETEM Volunteer Reader (2018)</li>
       </ul>
     </div>
-    
-  </div>
 
+  </div>
 </body>
 </html>
