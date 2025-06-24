@@ -4,7 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Elif Cebeci – CV</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-papLFepQf8kVVXVuGKCJ7V1B8FVz3Qo3+1Pe3R9ZDz1hGe8i0uzGJslPkA2+lAplXSoA7oZ+DjKYiGO9lZm4Qw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <style>
     body {
       margin: 0;
@@ -34,7 +35,8 @@
 
     h1 {
       text-align: center;
-      font-size: 1.5rem;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
       color: #6A7A6C;
       margin-bottom: 10px;
     }
@@ -42,7 +44,7 @@
     .section-title {
       font-weight: 700;
       text-transform: uppercase;
-      font-size: 0.9rem;
+      font-size: 1rem;
       margin-top: 30px;
       margin-bottom: 10px;
       color: #6A7A6C;
@@ -63,24 +65,23 @@
       width: 70%;
       padding: 40px;
       box-sizing: border-box;
-      background-image: url('https://via.placeholder.com/1200x857/8db5a2/ffffff?text=+');
+      background-image: linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.85)), url('https://via.placeholder.com/1200x857/8db5a2/ffffff?text=+');
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
       background-attachment: fixed;
-      background-blend-mode: lighten;
     }
 
     main h2 {
       color: #6A7A6C;
-      font-size: 1rem;
+      font-size: 1.2rem;
       text-transform: uppercase;
       border-bottom: 2px solid #EAF1EF;
       padding-bottom: 4px;
       margin-bottom: 10px;
     }
 
-    .summary, .work {
+    .summary, .work, .languages {
       margin-bottom: 30px;
     }
 
@@ -90,12 +91,22 @@
 
     .job-title {
       font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    .job-title:hover {
+      color: #577590;
     }
 
     .job-company {
       font-size: 0.9rem;
       margin-bottom: 6px;
       color: #555;
+    }
+
+    .icon {
+      margin-right: 8px;
+      color: #6A7A6C;
     }
   </style>
 </head>
@@ -106,9 +117,9 @@
     <div class="section">
       <div class="section-title">Contact</div>
       <ul>
-        <li>📍 Berlin, Germany</li>
-        <li>✉️ elif.cbc19@gmail.com</li>
-        <li>+43 681 8183 8235</li>
+        <li><i class="fas fa-map-marker-alt icon"></i> Berlin, Germany</li>
+        <li><i class="fas fa-envelope icon"></i> elif.cbc19@gmail.com</li>
+        <li><i class="fas fa-phone icon"></i> +43 681 8183 8235</li>
       </ul>
     </div>
     <div class="section">
@@ -116,6 +127,14 @@
       <ul>
         <li>MA, FU Berlin</li>
         <li>BA, Boğaziçi University</li>
+      </ul>
+    </div>
+    <div class="section">
+      <div class="section-title">Languages</div>
+      <ul>
+        <li><i class="fas fa-language icon"></i> Turkish – Native</li>
+        <li><i class="fas fa-language icon"></i> English – C1</li>
+        <li><i class="fas fa-language icon"></i> German – B2</li>
       </ul>
     </div>
   </aside>
@@ -169,3 +188,4 @@
   </main>
 </body>
 </html>
+
